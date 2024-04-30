@@ -1,23 +1,21 @@
-import { Link } from "react-router-dom"
-import './App.css'
+import { useNavigate } from "react-router-dom";
+import "./App.css";
 
 function App() {
-  
+  const navigate = useNavigate();
   return (
     <>
       <div>
         <h1>Main page</h1>
         <h2>Navigation...</h2>
         <nav>
-          <ul>
-            <li>
-              <Link to="profile">Profile Page</Link>
-            </li>
-          </ul>
+          <button onClick={()=> navigate('Profile/:main')}>
+            PorfilePage
+          </button>
         </nav>
-       </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

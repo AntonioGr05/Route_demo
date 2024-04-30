@@ -7,6 +7,6 @@ function DefaultProfile(){
         </div>
         </>
     );
-};
+}
 
 export default DefaultProfile;
